@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DgD-6F-ho8">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="smu-GE-JHT">
+            <objects>
+                <viewController id="DgD-6F-ho8" customClass="ViewController" customModule="PoseNetDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K7k-1e-6Uc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7vV-Ra-DeO">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gr-WK-FX4">
+                                <rect key="frame" x="20" y="52" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.21960784310000001" green="0.24313725489999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Zie-3I-O8Q"/>
+                                    <constraint firstAttribute="height" constant="40" id="c6h-1s-WAk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="tintColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Flip" image="arrow.triangle.2.circlepath.camera.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="cameraTapped:" destination="DgD-6F-ho8" eventType="touchUpInside" id="lOX-QG-RL1"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1Cn-T8-iQu">
+                                <rect key="frame" x="95" y="723" width="200" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYC-R1-zMw">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="35"/>
+                                        <color key="backgroundColor" red="0.21960784310000001" green="0.24313725489999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="confidence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuX-b8-zZr">
+                                        <rect key="frame" x="0.0" y="35" width="200" height="35"/>
+                                        <color key="backgroundColor" red="0.21960784310000001" green="0.24313725489999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Ir5-6a-Nve"/>
+                                    <constraint firstAttribute="width" constant="200" id="OTQ-Zh-r8u"/>
+                                    <constraint firstItem="VuX-b8-zZr" firstAttribute="height" secondItem="iYC-R1-zMw" secondAttribute="height" id="ntY-j7-ISV"/>
+                                    <constraint firstItem="VuX-b8-zZr" firstAttribute="width" secondItem="iYC-R1-zMw" secondAttribute="width" id="vaR-tR-NGI"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iEY-hy-Hdq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Cn-T8-iQu" firstAttribute="centerX" secondItem="K7k-1e-6Uc" secondAttribute="centerX" id="3ti-Yw-Pft"/>
+                            <constraint firstItem="iEY-hy-Hdq" firstAttribute="bottom" secondItem="1Cn-T8-iQu" secondAttribute="bottom" constant="17" id="CCC-O2-SDN"/>
+                            <constraint firstItem="7vV-Ra-DeO" firstAttribute="leading" secondItem="iEY-hy-Hdq" secondAttribute="leading" id="EhE-j8-8Hh"/>
+                            <constraint firstItem="7vV-Ra-DeO" firstAttribute="trailing" secondItem="iEY-hy-Hdq" secondAttribute="trailing" id="G3z-eq-IGK"/>
+                            <constraint firstAttribute="bottom" secondItem="7vV-Ra-DeO" secondAttribute="bottom" id="TM5-o9-TfI"/>
+                            <constraint firstItem="1gr-WK-FX4" firstAttribute="leading" secondItem="iEY-hy-Hdq" secondAttribute="leading" constant="20" id="bfw-sB-CvW"/>
+                            <constraint firstItem="1gr-WK-FX4" firstAttribute="top" secondItem="iEY-hy-Hdq" secondAttribute="top" constant="8" id="tAP-UJ-Tqg"/>
+                            <constraint firstItem="7vV-Ra-DeO" firstAttribute="top" secondItem="K7k-1e-6Uc" secondAttribute="top" id="zqi-4l-15W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraFlipButton" destination="1gr-WK-FX4" id="X2F-GQ-uAV"/>
+                        <outlet property="confidenceLable" destination="VuX-b8-zZr" id="cJX-8n-hCu"/>
+                        <outlet property="imageView" destination="7vV-Ra-DeO" id="SuM-lj-1qp"/>
+                        <outlet property="predictionLabel" destination="iYC-R1-zMw" id="BXK-Rp-As0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yca-Qa-xye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-352.30769230769232" y="77.488151658767762"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.triangle.2.circlepath.camera.fill" catalog="system" width="128" height="94"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
