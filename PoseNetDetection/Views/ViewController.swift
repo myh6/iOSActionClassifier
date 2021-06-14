@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet var predictionLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var cameraFlipButton: UIButton!
+    @IBOutlet var predConfStackView: UIStackView!
     
     var videoCapture: VideoCapture!
     var videoProcessingChain: VideoProcessingChain!
@@ -29,7 +30,7 @@ class ViewController: UIViewController {
         
         UIApplication.shared.isIdleTimerDisabled = true
         
-        let views = [confidenceLable, predictionLabel, cameraFlipButton]
+        let views = [confidenceLable, predConfStackView]
         views.forEach { view in
             view?.layer.cornerRadius = 10
             view?.overrideUserInterfaceStyle = .dark
@@ -42,6 +43,41 @@ class ViewController: UIViewController {
         videoCapture.delegate = self
     }
     
+    @IBAction func summaryTapped(_ sender: UIButton) {
+        let main = UIStoryboard(name: "Main", bundle: nil)
+
+        // Get the view controller based on its name.
+        let vcName = "MenuViewController"
+        let viewController = main.instantiateViewController(identifier: vcName)
+
+        // Cast it as a `SummaryViewController`.
+        guard let summaryVC = viewController as? MenuViewController else {
+            fatalError("Couldn't cast the Summary View Controller.")
+        }
+
+        // Copy the current actions times to the summary view.
+        summaryVC.actionFrameCounts = actionFrameCounts
+
+        // Define the presentation style for the summary view.
+        modalPresentationStyle = .popover
+        modalTransitionStyle = .coverVertical
+
+        // Reestablish the video-processing chain when the user dismisses the
+        // summary view.
+        summaryVC.dismissalClosure = {
+            // Resume the video feed by enabling the camera when the summary
+            // view goes away.
+            self.videoCapture.isEnabled = true
+        }
+
+        // Present the summary view to the user.
+        present(summaryVC, animated: true)
+
+        // Stop the video feed by disabling the camera while showing the summary
+        // view.
+        videoCapture.isEnabled = false
+        
+    }
     @IBAction func cameraTapped(_ sender: UIButton) {
         videoCapture.toggleCameraSelection()
     }
@@ -77,6 +113,11 @@ extension ViewController: VideoProcessingChainDelegate {
         // Present the prediction in the UI.
         updateUILabelsWithPrediction(actionPrediction)
     }
+}
+
+//MARK: - wiremode
+extension ViewController {
+    
 }
 
 //MARK: - helper funciton

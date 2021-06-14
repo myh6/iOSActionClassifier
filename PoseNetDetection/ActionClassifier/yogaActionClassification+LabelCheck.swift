@@ -5,7 +5,7 @@
 //  Created by curry敏 on 2021/5/11.
 //
 
-extension yogaActionClassification {
+extension yogaActionClassifier {
     /// Ensures the apps knows all of the model's labels at runtime.
     func checkLabels() {
         let metadata = model.modelDescription.metadata

@@ -7,14 +7,14 @@
 
 import CoreML
 
-extension yogaActionClassification {
+extension yogaActionClassifier {
     /// Creates a shared Exercise Classifier instance for the app at launch.
-    static let shared: yogaActionClassification = {
+    static let shared: yogaActionClassifier = {
         // Use a default model configuration.
         let defaultConfig = MLModelConfiguration()
 
         // Create an Exercise Classifier instance.
-        guard let yogaClassifier = try? yogaActionClassification(configuration: defaultConfig) else {
+        guard let yogaClassifier = try? yogaActionClassifier(configuration: defaultConfig) else {
             // The app requires the action classifier to function.
             fatalError("yoga Classifier failed to initialize.")
         }

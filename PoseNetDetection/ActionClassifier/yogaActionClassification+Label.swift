@@ -5,7 +5,7 @@
 //  Created by curry敏 on 2021/5/11.
 //
 
-extension yogaActionClassification {
+extension yogaActionClassifier {
     /// Represents the app's knowledge of the Exercise Classifier model's labels.
     enum Label: String, CaseIterable {
         case lotus = "lotus"

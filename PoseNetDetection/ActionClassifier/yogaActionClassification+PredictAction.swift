@@ -7,7 +7,7 @@
 
 import CoreML
 
-extension yogaActionClassification {
+extension yogaActionClassifier {
     /// Predicts an action from a series of landmarks' positions over time.
     /// - Parameter window: An `MLMultiarray` that contains the locations of a
     /// person's body landmarks for multiple points in time.

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,6 @@
 		0B7171F8264A22A400869C2B /* Pose+Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7171F7264A22A400869C2B /* Pose+Landmark.swift */; };
 		0B7171FB264A22B900869C2B /* Pose+Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7171FA264A22B900869C2B /* Pose+Connection.swift */; };
 		0B7171FE264A22D000869C2B /* Pose+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7171FD264A22D000869C2B /* Pose+Empty.swift */; };
-		0B717202264A240200869C2B /* yogaActionClassification.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B717201264A240200869C2B /* yogaActionClassification.mlmodel */; };
 		0B717206264A244C00869C2B /* ActionPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B717205264A244C00869C2B /* ActionPrediction.swift */; };
 		0B71720A264A248500869C2B /* yogaActionClassification+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B717209264A248500869C2B /* yogaActionClassification+Singleton.swift */; };
 		0B71720D264A24A700869C2B /* yogaActionClassification+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B71720C264A24A700869C2B /* yogaActionClassification+Label.swift */; };
@@ -29,9 +28,15 @@
 		0B7EC7382643FC3400042FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7EC7372643FC3400042FC5 /* Assets.xcassets */; };
 		0B7EC73B2643FC3400042FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7EC7392643FC3400042FC5 /* LaunchScreen.storyboard */; };
 		0BBDC25E2648057100F897DF /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDC25D2648057100F897DF /* VideoCapture.swift */; };
+		0BF41F422654DDBD00146E18 /* yogaActionClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0BF41F412654DDBD00146E18 /* yogaActionClassifier.mlmodel */; };
+		0BF41F4C2656703C00146E18 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF41F4B2656703C00146E18 /* MenuViewController.swift */; };
+		0BF41F4F26574E0500146E18 /* WikiAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF41F4E26574E0500146E18 /* WikiAPIViewController.swift */; };
+		A93834D6DBE71A6ACFC2DDBD /* Pods_PoseNetDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080CF653B9EE4FB358792CD6 /* Pods_PoseNetDetection.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07DD843EBD0EB2FEF308A7AC /* Pods-PoseNetDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoseNetDetection.debug.xcconfig"; path = "Target Support Files/Pods-PoseNetDetection/Pods-PoseNetDetection.debug.xcconfig"; sourceTree = "<group>"; };
+		080CF653B9EE4FB358792CD6 /* Pods_PoseNetDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoseNetDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7171D8264A20A600869C2B /* VideoCaptureDevice+FrameRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoCaptureDevice+FrameRate.swift"; sourceTree = "<group>"; };
 		0B7171DB264A20C600869C2B /* VideoCaptrueInput+Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoCaptrueInput+Camera.swift"; sourceTree = "<group>"; };
 		0B7171DE264A20E100869C2B /* VideoCaptureOutput+PixelFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoCaptureOutput+PixelFormat.swift"; sourceTree = "<group>"; };
@@ -40,7 +45,6 @@
 		0B7171F7264A22A400869C2B /* Pose+Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pose+Landmark.swift"; sourceTree = "<group>"; };
 		0B7171FA264A22B900869C2B /* Pose+Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pose+Connection.swift"; sourceTree = "<group>"; };
 		0B7171FD264A22D000869C2B /* Pose+Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pose+Empty.swift"; sourceTree = "<group>"; };
-		0B717201264A240200869C2B /* yogaActionClassification.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = yogaActionClassification.mlmodel; sourceTree = "<group>"; };
 		0B717205264A244C00869C2B /* ActionPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionPrediction.swift; sourceTree = "<group>"; };
 		0B717209264A248500869C2B /* yogaActionClassification+Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "yogaActionClassification+Singleton.swift"; sourceTree = "<group>"; };
 		0B71720C264A24A700869C2B /* yogaActionClassification+Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "yogaActionClassification+Label.swift"; sourceTree = "<group>"; };
@@ -56,6 +60,10 @@
 		0B7EC73A2643FC3400042FC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B7EC73C2643FC3400042FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BBDC25D2648057100F897DF /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		0BF41F412654DDBD00146E18 /* yogaActionClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = yogaActionClassifier.mlmodel; sourceTree = "<group>"; };
+		0BF41F4B2656703C00146E18 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0BF41F4E26574E0500146E18 /* WikiAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiAPIViewController.swift; sourceTree = "<group>"; };
+		BC36D8055A2827E9CAD3E780 /* Pods-PoseNetDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoseNetDetection.release.xcconfig"; path = "Target Support Files/Pods-PoseNetDetection/Pods-PoseNetDetection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93834D6DBE71A6ACFC2DDBD /* Pods_PoseNetDetection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +100,7 @@
 		0B717204264A240B00869C2B /* ActionClassifier */ = {
 			isa = PBXGroup;
 			children = (
-				0B717201264A240200869C2B /* yogaActionClassification.mlmodel */,
+				0BF41F412654DDBD00146E18 /* yogaActionClassifier.mlmodel */,
 				0B717205264A244C00869C2B /* ActionPrediction.swift */,
 				0B717209264A248500869C2B /* yogaActionClassification+Singleton.swift */,
 				0B71720C264A24A700869C2B /* yogaActionClassification+Label.swift */,
@@ -107,6 +116,8 @@
 			children = (
 				0B7EC72D2643FC3000042FC5 /* PoseNetDetection */,
 				0B7EC72C2643FC3000042FC5 /* Products */,
+				EA0168CCF4DAE27AA6A6204C /* Pods */,
+				37FBB19AFB4A36A380A45244 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,12 +137,7 @@
 				0B7171EA264A21EC00869C2B /* Pose */,
 				0B717204264A240B00869C2B /* ActionClassifier */,
 				0BF41F40264D408200146E18 /* Views */,
-				0B7EC72E2643FC3000042FC5 /* AppDelegate.swift */,
-				0B7EC7302643FC3000042FC5 /* SceneDelegate.swift */,
-				0B7EC7342643FC3000042FC5 /* Main.storyboard */,
-				0B7EC7372643FC3400042FC5 /* Assets.xcassets */,
-				0B7EC7392643FC3400042FC5 /* LaunchScreen.storyboard */,
-				0B7EC73C2643FC3400042FC5 /* Info.plist */,
+				0BF41F4D26567A0800146E18 /* App */,
 			);
 			path = PoseNetDetection;
 			sourceTree = "<group>";
@@ -151,8 +157,40 @@
 			isa = PBXGroup;
 			children = (
 				0B7EC7322643FC3000042FC5 /* ViewController.swift */,
+				0BF41F4B2656703C00146E18 /* MenuViewController.swift */,
+				0BF41F4E26574E0500146E18 /* WikiAPIViewController.swift */,
+				0B7EC7342643FC3000042FC5 /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0BF41F4D26567A0800146E18 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0B7EC72E2643FC3000042FC5 /* AppDelegate.swift */,
+				0B7EC7372643FC3400042FC5 /* Assets.xcassets */,
+				0B7EC7392643FC3400042FC5 /* LaunchScreen.storyboard */,
+				0B7EC7302643FC3000042FC5 /* SceneDelegate.swift */,
+				0B7EC73C2643FC3400042FC5 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		37FBB19AFB4A36A380A45244 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				080CF653B9EE4FB358792CD6 /* Pods_PoseNetDetection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA0168CCF4DAE27AA6A6204C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07DD843EBD0EB2FEF308A7AC /* Pods-PoseNetDetection.debug.xcconfig */,
+				BC36D8055A2827E9CAD3E780 /* Pods-PoseNetDetection.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B7EC73F2643FC3400042FC5 /* Build configuration list for PBXNativeTarget "PoseNetDetection" */;
 			buildPhases = (
+				C4501073E2062552E7D9AB40 /* [CP] Check Pods Manifest.lock */,
 				0B7EC7272643FC3000042FC5 /* Sources */,
 				0B7EC7282643FC3000042FC5 /* Frameworks */,
 				0B7EC7292643FC3000042FC5 /* Resources */,
+				B7ED25973E9E0E59F3975E7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +260,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B7ED25973E9E0E59F3975E7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PoseNetDetection/Pods-PoseNetDetection-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PoseNetDetection/Pods-PoseNetDetection-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PoseNetDetection/Pods-PoseNetDetection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4501073E2062552E7D9AB40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoseNetDetection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0B7EC7272643FC3000042FC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -232,17 +314,19 @@
 				0B71720D264A24A700869C2B /* yogaActionClassification+Label.swift in Sources */,
 				0B7171FE264A22D000869C2B /* Pose+Empty.swift in Sources */,
 				0B71720A264A248500869C2B /* yogaActionClassification+Singleton.swift in Sources */,
+				0BF41F422654DDBD00146E18 /* yogaActionClassifier.mlmodel in Sources */,
 				0B717213264A24EE00869C2B /* yogaActionClassification+PredictAction.swift in Sources */,
 				0B7171DC264A20C600869C2B /* VideoCaptrueInput+Camera.swift in Sources */,
 				0B7171F5264A225100869C2B /* Pose.swift in Sources */,
+				0BF41F4C2656703C00146E18 /* MenuViewController.swift in Sources */,
 				0B7171E8264A21A800869C2B /* VideoProcessingChain.swift in Sources */,
 				0B7EC72F2643FC3000042FC5 /* AppDelegate.swift in Sources */,
 				0B717210264A24C700869C2B /* yogaActionClassification+LabelCheck.swift in Sources */,
-				0B717202264A240200869C2B /* yogaActionClassification.mlmodel in Sources */,
 				0B717206264A244C00869C2B /* ActionPrediction.swift in Sources */,
 				0B7171D9264A20A600869C2B /* VideoCaptureDevice+FrameRate.swift in Sources */,
 				0B7171FB264A22B900869C2B /* Pose+Connection.swift in Sources */,
 				0B717216264A250E00869C2B /* yogaActionClassification+FrameRate.swift in Sources */,
+				0BF41F4F26574E0500146E18 /* WikiAPIViewController.swift in Sources */,
 				0B7EC7312643FC3000042FC5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,12 +471,13 @@
 		};
 		0B7EC7402643FC3400042FC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07DD843EBD0EB2FEF308A7AC /* Pods-PoseNetDetection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R5599LYD4Y;
-				INFOPLIST_FILE = PoseNetDetection/Info.plist;
+				INFOPLIST_FILE = PoseNetDetection/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,12 +491,13 @@
 		};
 		0B7EC7412643FC3400042FC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC36D8055A2827E9CAD3E780 /* Pods-PoseNetDetection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R5599LYD4Y;
-				INFOPLIST_FILE = PoseNetDetection/Info.plist;
+				INFOPLIST_FILE = PoseNetDetection/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
